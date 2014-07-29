@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>   
-
+    <head>
         <!--
                 Charisma v1.0.0
 
@@ -12,45 +11,21 @@
                 http://usman.it
                 http://twitter.com/halalit_usman
         -->
+
+        <!--
+                theme Codeigniter GARMASER
+
+                Copyright 2014 Sergio Garcia Mamani
+                Licensed under the Apache License v2.0
+                http://www.apache.org/licenses/LICENSE-2.0
+
+                http://garmaser.com
+        -->
         <meta charset="utf-8">
-<!--	<title>Free HTML5 Bootstrap Admin Template</title>-->
-        <title><?php echo $title; ?></title>
+        <title>Free HTML5 Bootstrap Admin Template Codeigniter GARMASER</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
-        <meta name="author" content="Muhammad Usman -> Sergio Garcia Mamani">
-
-  
-        <!-- The styles -->
-        <link id="bs-css" href="<?php echo base_url(); ?>assets/themes/charisma/css/bootstrap-spacelab.css" rel="stylesheet">
-        <style type="text/css">
-            body {
-                padding-bottom: 40px;
-            }
-            .sidebar-nav {
-                padding: 9px 0;
-            }
-        </style>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/bootstrap-responsive.css" rel="stylesheet">
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/charisma-app.css" rel="stylesheet">
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/fullcalendar.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/fullcalendar.print.css" rel='stylesheet'  media='print'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/chosen.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/uniform.default.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/colorbox.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/jquery.cleditor.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/jquery.noty.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/noty_theme_default.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/elfinder.min.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/elfinder.theme.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/jquery.iphone.toggle.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/opa-icons.css" rel='stylesheet'>
-        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/uploadify.css" rel='stylesheet'>
-
-        <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <meta name="author" content="Muhammad Usman (Sergio Garcia Mamani theme codeigniter)">
 
 
         <?php
@@ -73,95 +48,53 @@
             ?><link rel="stylesheet" href="<?php echo $file; ?>" type="text/css" /><?php
         } echo "\n\t";
 
-
-
-        /** -- to here -- */
-        ?>
-
-        <!-- The fav icon -->
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/themes/charisma/img/favicon.ico">
-
-        <!-- ---------------  INICIO grocerycrud -------------------------- -->
-        <?php
-        if (!empty($js_files)) {
-            foreach ($js_files as $file):
-                ?>
-                <script src="<?php echo $file; ?>"></script>
-                <?php
-            endforeach;
-        }else {
-            ?>
-            <!-- jQuery -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/jquery-1.7.2.min.js"></script>
-            <!-- jQuery UI -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/jquery-ui-1.8.21.custom.min.js"></script>    
-            <!-- transition / effect library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-transition.js"></script>
-            <!-- alert enhancer library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-alert.js"></script>
-            <!-- modal / dialog library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-modal.js"></script>
-            <!-- custom dropdown library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-dropdown.js"></script>
-            <!-- scrolspy library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-scrollspy.js"></script>
-            <!-- library for creating tabs -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-tab.js"></script>
-            <!-- library for advanced tooltip -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-tooltip.js"></script>
-            <!-- popover effect library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-popover.js"></script>
-            <!-- button enhancer library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-button.js"></script>
-            <!-- accordion library (optional, not used in demo) -->
-            <!--<script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-collapse.js"></script>-->
-            <!-- carousel slideshow library (optional, not used in demo) -->
-            <!--<script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-carousel.js"></script>-->
-            <!-- autocomplete library -->
-            <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-typeahead.js"></script>
-            <!-- tour library -->
-            <!--<script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-tour.js"></script>-->
-
-
-            <script>
-                $(function() {
-                    //Array para dar formato al calendario en español
-                    $.datepicker.regional['es'] =
-                            {
-                                closeText: 'Cerrar',
-                                prevText: 'Previo',
-                                nextText: 'Próximo',
-                                monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
-                                    'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-                                monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
-                                    'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-                                monthStatus: 'Ver otro mes', yearStatus: 'Ver otro año',
-                                dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-                                dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sáb'],
-                                dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
-                                dateFormat: 'dd/mm/yy', firstDay: 0,
-                                initStatus: 'Selecciona la fecha', isRTL: false};
-                    $.datepicker.setDefaults($.datepicker.regional['es']);
-
-                    //miDate: fecha de comienzo D=días | M=mes | Y=año
-                    //maxDate: fecha tope D=días | M=mes | Y=año
-                    $("#datepicker").datepicker({minDate: "-1D", maxDate: "+1M +10D"});
-                });
-            </script>     
-
-            <?php
-        }
-
         foreach ($js as $file) {
             echo "\n\t\t";
             ?><script src="<?php echo $file; ?>"></script><?php
         } echo "\n\t";
+
+        /** -- to here -- */
         ?>
+
+        <!-- The styles -->
+        <link id="bs-css" name="<?php echo base_url(); ?>assets/themes/charisma/" href="<?php echo base_url(); ?>assets/themes/charisma/css/bootstrap-cerulean.css" rel="stylesheet">
+        <style type="text/css">
+            body {
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+        </style>
+        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/charisma-app.css" rel="stylesheet">
+        <link href="<?php echo base_url(); ?>assets/themes/charisma/css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/fullcalendar.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/fullcalendar.print.css' rel='stylesheet'  media='print'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/chosen.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/uniform.default.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/colorbox.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/jquery.cleditor.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/jquery.noty.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/noty_theme_default.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/elfinder.min.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/elfinder.theme.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/jquery.iphone.toggle.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/opa-icons.css' rel='stylesheet'>
+        <link href='<?php echo base_url(); ?>assets/themes/charisma/css/uploadify.css' rel='stylesheet'>
+
+        <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- The fav icon -->
+        <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/themes/charisma/img/favicon.ico">
 
     </head>
 
     <body>
-        <?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
+<?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
             <!-- topbar starts -->
             <div class="navbar">
                 <div class="navbar-inner">
@@ -171,61 +104,77 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </a>
-                        <a class="brand" href="#"> <img alt="Charisma Logo" src="<?php echo base_url(); ?>assets/themes/charisma/img/logo20.png" /> <span>GARMASER</span></a>
+                        <a class="brand" href="index.html"> <img alt="Charisma Logo" src="<?php echo base_url(); ?>assets/themes/charisma/img/logo20.png" /> <span>GarMaSer</span></a>
 
+                        <!-- theme selector starts -->
+                        <div class="btn-group pull-right theme-container" >
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="icon-tint"></i><span class="hidden-phone"> Change Theme / Skin</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" id="themes">
+                                <li><a data-value="classic" href="<?php echo base_url(); ?>"><i class="icon-blank"></i> Classic</a></li>
+                                <li><a data-value="cerulean" href="#"><i class="icon-blank"></i> Cerulean</a></li>
+                                <li><a data-value="cyborg" href="#"><i class="icon-blank"></i> Cyborg</a></li>
+                                <li><a data-value="redy" href="#"><i class="icon-blank"></i> Redy</a></li>
+                                <li><a data-value="journal" href="#"><i class="icon-blank"></i> Journal</a></li>
+                                <li><a data-value="simplex" href="#"><i class="icon-blank"></i> Simplex</a></li>
+                                <li><a data-value="slate" href="#"><i class="icon-blank"></i> Slate</a></li>
+                                <li><a data-value="spacelab" href="#"><i class="icon-blank"></i> Spacelab</a></li>
+                                <li><a data-value="united" href="#"><i class="icon-blank"></i> United</a></li>
+                            </ul>
+                        </div>
+                        <!-- theme selector ends -->
 
                         <!-- user dropdown starts -->
                         <div class="btn-group pull-right" >
                             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="icon-user"></i><span class="hidden-phone"> 
-                                    <?php
-//                                    $user = $this->ion_auth->user()->row();
-//                                    $user_groups = $this->ion_auth->get_users_groups($user->id)->row();
-//                                    echo '<b>' . strtoupper($user_groups->name) . ': </b>';
-//                                    echo strtoupper($user->first_name . ' ' . $user->last_name);
-                                    echo 'SERGIO GARCIA MAMANI';
-                                    ?>
-                                </span>
+                                <i class="icon-user"></i><span class="hidden-phone"> Sergio Garcia Mamani</span>
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Editar mis datos</a></li>
+                                <li><a href="#">Profile</a></li>
                                 <li class="divider"></li>
-                                <li><a href="<?php echo site_url('auth/logout'); ?>">Salir del sistema</a></li>
+                                <li><a href="login.html">Logout</a></li>
                             </ul>
                         </div>
                         <!-- user dropdown ends -->
 
                         <div class="top-nav nav-collapse">
                             <ul class="nav">
-                                <li><a href="#">Visitar Sitio Web</a></li>
+                                <li><a href="#">Visit Site</a></li>
+                                <li>
+                                    <form class="navbar-search pull-left">
+                                        <input placeholder="Search" class="search-query span2" name="query" type="text">
+                                    </form>
+                                </li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>
                 </div>
             </div>
             <!-- topbar ends -->
-        <?php } ?>
+<?php } ?>
         <div class="container-fluid">
             <div class="row-fluid">
-                <?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
+<?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
 
                     <!-- left menu starts -->
                     <div class="span2 main-menu-span">
                         <div class="well nav-collapse sidebar-nav">
                             <ul class="nav nav-tabs nav-stacked main-menu">
-                                <?php
-                                $html = '';
-                                if (!empty($menu)) {
-                                    foreach ($menu as $valor) {
-                                        if (empty($valor['link']))
-                                            $html.= '<li class="nav-header hidden-tablet">' . $valor['nombre'] . '</li>';
-                                        else
-                                            $html.= '<li><a class="ajax-link" href="' . $valor['link'] . '"><i class="' . $valor['icono'] . '"></i><span class="hidden-tablet"> ' . $valor['nombre'] . '</span></a></li>';
-                                    }
-                                }
-                                echo $html;
-                                ?>	
+    <?php
+    $html = '';
+    if (!empty($menu)) {
+        foreach ($menu as $valor) {
+            if (empty($valor['link']))
+                $html.= '<li class="nav-header hidden-tablet">' . $valor['nombre'] . '</li>';
+            else
+                $html.= '<li><a class="ajax-link" href="' . $valor['link'] . '"><i class="' . $valor['icono'] . '"></i><span class="hidden-tablet"> ' . $valor['nombre'] . '</span></a></li>';
+        }
+    }
+    echo $html;
+    ?>
                             </ul>
                             <label id="for-is-ajax" class="hidden-tablet" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
                         </div><!--/.well -->
@@ -241,40 +190,27 @@
 
                     <div id="content" class="span10">
                         <!-- content starts -->
-                    <?php } ?>
-
-                    <div class="row-fluid">
-                        <div class="box span12">
-                            <div class="box-header well" data-original-title>
-                                <h2><i class="icon-cog"></i> <?php if (!empty($titulo)) echo strtoupper($titulo); ?></h2>
-                                <div class="box-icon">
-                                </div>
-                            </div>   
-
-
-                            <?php
-                            if (!empty($botones)) {
-                                echo '<div style="margin:10px 0px 0px 20px;">'.$botones.'</div>';
-                            }
-
-                            echo $output;
-                            ?>
-
-                        </div><!--/span-->
-
-                    </div><!--/row-->
-
-<?php echo $this->load->get_section('sidebar'); ?>
+<?php } ?>
 
 
 
 
-                <?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
+<?php
+if (!empty($botones)) {
+    echo '<div style="margin:10px 0px 0px 20px;">' . $botones . '</div>';
+}
+
+echo $output;
+?>
+
+
+
+<?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
                         <!-- content ends -->
                     </div><!--/#content.span10-->
 <?php } ?>
             </div><!--/fluid-row-->
-<?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
+                <?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
 
                 <hr>
 
@@ -293,8 +229,8 @@
                 </div>
 
                 <footer>
-                    <p class="pull-left">&copy; <a href="#" target="_blank">GARMASER</a> <?php echo date('Y') ?></p>
-                    <p class="pull-right">Powered by: <a href="http://www.hostruser.com">HostRuser</a></p>
+                    <p class="pull-left">&copy; <a href="http://garmaser.com" target="_blank">Muhammad Usman (Sergio Garcia M. theme Codeigniter)</a> <?php echo date('Y') ?></p>
+                    <p class="pull-right">Powered by: <a href="http://www.hostruser.com">Host Ruser</a></p>
                 </footer>
 <?php } ?>
 
@@ -302,17 +238,44 @@
 
         <!-- external javascript
         ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->   
+        <!-- Placed at the end of the document so the pages load faster -->
 
-
-
-
+        <!-- jQuery -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/jquery-1.7.2.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/jquery-ui-1.8.21.custom.min.js"></script>
+        <!-- transition / effect library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-transition.js"></script>
+        <!-- alert enhancer library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-alert.js"></script>
+        <!-- modal / dialog library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-modal.js"></script>
+        <!-- custom dropdown library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-dropdown.js"></script>
+        <!-- scrolspy library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-scrollspy.js"></script>
+        <!-- library for creating tabs -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-tab.js"></script>
+        <!-- library for advanced tooltip -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-tooltip.js"></script>
+        <!-- popover effect library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-popover.js"></script>
+        <!-- button enhancer library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-button.js"></script>
+        <!-- accordion library (optional, not used in demo) -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-collapse.js"></script>
+        <!-- carousel slideshow library (optional, not used in demo) -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-carousel.js"></script>
+        <!-- autocomplete library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-typeahead.js"></script>
+        <!-- tour library -->
+        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/bootstrap-tour.js"></script>
         <!-- library for cookie management -->
         <script src="<?php echo base_url(); ?>assets/themes/charisma/js/jquery.cookie.js"></script>
         <!-- calander plugin -->
-        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/fullcalendar.min.js"></script>
+        <script src='<?php echo base_url(); ?>assets/themes/charisma/js/fullcalendar.min.js'></script>
         <!-- data table plugin -->
-        <script src="<?php echo base_url(); ?>assets/themes/charisma/js/jquery.dataTables.min.js"></script>
+        <script src='<?php echo base_url(); ?>assets/themes/charisma/js/jquery.dataTables.min.js'></script>
 
         <!-- chart libraries start -->
         <script src="<?php echo base_url(); ?>assets/themes/charisma/js/excanvas.js"></script>
@@ -346,6 +309,24 @@
         <script src="<?php echo base_url(); ?>assets/themes/charisma/js/jquery.history.js"></script>
         <!-- application script for Charisma demo -->
         <script src="<?php echo base_url(); ?>assets/themes/charisma/js/charisma.js"></script>
-        
+
+<?php
+//Google Analytics code for tracking my demo site, you can remove this.
+if ($_SERVER['HTTP_HOST'] == 'usman.it') {
+    ?>
+            <script>
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-26532312-1']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+                })();
+            </script>
+        <?php } ?>
+
     </body>
 </html>

@@ -1,25 +1,25 @@
 $(document).ready(function(){
 	//themes, change CSS with JS
 	//default theme(CSS) is cerulean, change it if needed
-//	var current_theme = $.cookie('current_theme')==null ? 'cerulean' :$.cookie('current_theme');
-//	switch_theme(current_theme);
-//	
-//	$('#themes a[data-value="'+current_theme+'"]').find('i').addClass('icon-ok');
-//				 
-//	$('#themes a').click(function(e){
-//		e.preventDefault();
-//		current_theme=$(this).attr('data-value');
-//		$.cookie('current_theme',current_theme,{expires:365});
-//		switch_theme(current_theme);
-//		$('#themes i').removeClass('icon-ok');
-//		$(this).find('i').addClass('icon-ok');
-//	});
-//	
-//	
-//	function switch_theme(theme_name)
-//	{
-//		$('#bs-css').attr('href','http://localhost/templeates/codeigniter_charisma/codeIgniter_2_1_4/assets/themes/charisma/css/bootstrap-'+theme_name+'.css');
-//	}
+	var current_theme = $.cookie('current_theme')==null ? 'cerulean' :$.cookie('current_theme');
+	switch_theme(current_theme);
+	
+	$('#themes a[data-value="'+current_theme+'"]').find('i').addClass('icon-ok');
+				 
+	$('#themes a').click(function(e){
+		e.preventDefault();
+		current_theme=$(this).attr('data-value');
+		$.cookie('current_theme',current_theme,{expires:365});
+		switch_theme(current_theme);
+		$('#themes i').removeClass('icon-ok');
+		$(this).find('i').addClass('icon-ok');
+	});
+	
+	
+	function switch_theme(theme_name)
+	{       urlActual = $('#bs-css').attr('name');
+		$('#bs-css').attr('href',urlActual + 'css/bootstrap-'+theme_name+'.css');
+	}
 	
 	//ajax menu checkbox
 	$('#is-ajax').click(function(e){
@@ -310,7 +310,7 @@ function docReady(){
 	});
 
 
-//	initialize the calendar
+	//initialize the calendar
 	$('#calendar').fullCalendar({
 		header: {
 			left: 'prev,next today',
