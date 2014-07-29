@@ -19,17 +19,7 @@
         <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
         <meta name="author" content="Muhammad Usman -> Sergio Garcia Mamani">
 
-        <!-- ---------------  INICIO grocerycrud -------------------------- -->
-        <?php
-        if (!empty($css_files)) {
-            foreach ($css_files as $file):
-                ?>
-                <link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
-                <?php
-            endforeach;
-        }
-        ?>
-
+  
         <!-- The styles -->
         <link id="bs-css" href="<?php echo base_url(); ?>assets/themes/charisma/css/bootstrap-spacelab.css" rel="stylesheet">
         <style type="text/css">
